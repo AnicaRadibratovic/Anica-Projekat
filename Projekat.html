@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Kod Meda</title>
+    <!-- Google Fonts za moderan izgled -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Moderan Blurovani Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">Kod Meda <span>🐶 domaći restoran</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-link active" data-target="pocetna">Početna</a></li>
+                    <li><a href="#" class="nav-link" data-target="meni">Meni</a></li>
+                    <li><a href="#" class="nav-link" data-target="rezervacije">Rezervacije</a></li>
+                    <li><a href="#" class="nav-link" data-target="ocene">Ocene</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- GLAVNI SADRŽAJ (Stranice) -->
+    <main>
+        
+        <!-- Stranica 1: Početna -->
+        <section id="pocetna" class="page-section active-page hero-section">
+            <div class="hero-content">
+                <span class="hero-badge">Naša Porodična Priča</span>
+                <h1>Gde se hrana sprema sa dušom.</h1>
+                <p>Dobrodošli u restoran "Kod Meda" – mesto nazvano po našem najvernijem prijatelju i psu Medu. Kod nas vas čekaju vrhunski domaći ukusi, topla atmosfera i gostoprimstvo koje se pamti.</p>
+                <button class="btn browse-menu-btn" data-target="meni">Istraži Meni</button>
+            </div>
+        </section>
+
+        <!-- Stranica 2: Meni -->
+        <section id="meni" class="page-section hidden-page menu-section">
+            <div class="section-header">
+                <h2>Naš Meni</h2>
+                <p>Pažljivo birani sastojci i domaći recepti za svačiji ukus</p>
+            </div>
+            
+            <!-- GLAVNA GRUPA: HRANA -->
+            <div class="menu-main-title">⭐ Hrana ⭐</div>
+            <div class="menu-container">
+                
+                <!-- Doručak -->
+                <div class="menu-category">
+                    <div class="category-icon">🍳</div>
+                    <h3>Doručak</h3>
+                    <ul class="menu-list">
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Domaći Tradicionalni Doručak</span>
+                                <p class="item-desc">3 jaja na oko, domaća kobasica, slaninica, sir, prženice</p>
+                            </div>
+                            <span class="item-price">420 RSD</span>
+                        </li>
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Omlet sa Šumskim Pečurkama</span>
+                                <p class="item-desc">3 jaja, miks šumskih pečuraka, mocarela, zelena salata</p>
+                            </div>
+                            <span class="item-price">380 RSD</span>
+                        </li>
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Užička Komplet Lepinja</span>
+                                <p class="item-desc">Domaća lepinja, pretop, jaje, kajmak</p>
+                            </div>
+                            <span class="item-price">390 RSD</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Paste -->
+                <div class="menu-category">
+                    <div class="category-icon">🍝</div>
+                    <h3>Paste</h3>
+                    <ul class="menu-list">
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Pasta Karbonara</span>
+                                <p class="item-desc">Špageti, hrskava slanina, neutralna pavlaka, žumance, parmezan</p>
+                            </div>
+                            <span class="item-price">780 RSD</span>
+                        </li>
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Taljatele sa Piletinom i Golicom</span>
+                                <p class="item-desc">Piletina, sos od tikvica, mlevena golica, neutralna pavlaka</p>
+                            </div>
+                            <span class="item-price">820 RSD</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Specijaliteti od mesa -->
+                <div class="menu-category">
+                    <div class="category-icon">🍖</div>
+                    <h3>Specijaliteti od Mesa</h3>
+                    <ul class="menu-list">
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Hrskava Pohovana Piletina</span>
+                                <p class="item-desc">File u panko prezlama sa pomfritom i tartar sosom</p>
+                            </div>
+                            <span class="item-price">790 RSD</span>
+                        </li>
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">"Medov" Specijalitet (Mešano meso)</span>
+                                <p class="item-desc">Ćevapi, domaći uštipci, pileći file, kobasica, pikantni krompirići</p>
+                            </div>
+                            <span class="item-price">1,350 RSD</span>
+                        </li>
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Domaća Teletina pod Sačem</span>
+                                <p class="item-desc">Topljeni komadi teletine sa pekarskim krompirom</p>
+                            </div>
+                            <span class="item-price">1,400 RSD</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Pice -->
+                <div class="menu-category">
+                    <div class="category-icon">🍕</div>
+                    <h3>Pice</h3>
+                    <ul class="menu-list">
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Pizza Capricciosa</span>
+                                <p class="item-desc">Pelat, sir, šunka, šampinjoni, masline, origano</p>
+                            </div>
+                            <span class="item-price">750 RSD</span>
+                        </li>
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Pizza Kuće (Kod Meda)</span>
+                                <p class="item-desc">Pelat, sir, kulen, pršuta, domaći kajmak, ljuta papričica</p>
+                            </div>
+                            <span class="item-price">890 RSD</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Dezerti -->
+                <div class="menu-category">
+                    <div class="category-icon">🍰</div>
+                    <h3>Dezerti</h3>
+                    <ul class="menu-list">
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Domaće Palačinke</span>
+                                <p class="item-desc">Eurokrem-plazma ili domaći džem od šljiva</p>
+                            </div>
+                            <span class="item-price">320 RSD</span>
+                        </li>
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Lava Kolač sa Sladoledom</span>
+                                <p class="item-desc">Topli čokoladni kolač sa kuglom vanile</p>
+                            </div>
+                            <span class="item-price">420 RSD</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- GLAVNA GRUPA: PIĆE -->
+            <div class="menu-main-title" style="margin-top: 60px;">⭐ Piće ⭐</div>
+            <div class="menu-container">
+
+                <!-- Kafe -->
+                <div class="menu-category">
+                    <div class="category-icon">☕</div>
+                    <h3>Kafe & Topli Napici</h3>
+                    <ul class="menu-list">
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Domaća / Turska kafa</span>
+                                <p class="item-desc">Tradicionalna kafa poslužena sa ratlukom</p>
+                            </div>
+                            <span class="item-price">140 RSD</span>
+                        </li>
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Espresso / Sa mlekom</span>
+                                <p class="item-desc">Vrhunska 100% Arabica kafa</p>
+                            </div>
+                            <span class="item-price">160 / 180 RSD</span>
+                        </li>
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Cappuccino</span>
+                                <p class="item-desc">Sa bogatom i gustom mlečnom penom</p>
+                            </div>
+                            <span class="item-price">200 RSD</span>
+                        </li>
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Topla Čokolada</span>
+                                <p class="item-desc">Gusta crna ili bela čokolada sa šlagom</p>
+                            </div>
+                            <span class="item-price">240 RSD</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Bezalkoholna pića -->
+                <div class="menu-category">
+                    <div class="category-icon">🥤</div>
+                    <h3>Bezalkoholna Pića</h3>
+                    <ul class="menu-list">
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Coca-Cola / Zero / Fanta 0.25l</span>
+                                <p class="item-desc">Staklena ambalaža</p>
+                            </div>
+                            <span class="item-price">220 RSD</span>
+                        </li>
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Domaća Limunada / Pomorandža</span>
+                                <p class="item-desc">Sveže ceđeno voće 0.3l</p>
+                            </div>
+                            <span class="item-price">240 / 320 RSD</span>
+                        </li>
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Gusti Sokovi (Next)</span>
+                                <p class="item-desc">Jabuka, borovnica, breskva, narandža 0.2l</p>
+                            </div>
+                            <span class="item-price">210 RSD</span>
+                        </li>
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Rosa Voda</span>
+                                <p class="item-desc">Gazirana ili negazirana 0.33l</p>
+                            </div>
+                            <span class="item-price">150 RSD</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Alkoholna pića -->
+                <div class="menu-category">
+                    <div class="category-icon">🥃</div>
+                    <h3>Alkoholna Pića</h3>
+                    <ul class="menu-list">
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Domaća Rakija (Dunja / Šljiva)</span>
+                                <p class="item-desc">Tradicionalna rakija, starenje u buradima, 0.03l</p>
+                            </div>
+                            <span class="item-price">250 RSD</span>
+                        </li>
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Kajsijevača / Viljamovka</span>
+                                <p class="item-desc">Premium voćne rakije punog ukusa, 0.03l</p>
+                            </div>
+                            <span class="item-price">270 RSD</span>
+                        </li>
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Zaječarsko Točeno Pivo</span>
+                                <p class="item-desc">Kafanski klasik, hladno točeno, 0.5l</p>
+                            </div>
+                            <span class="item-price">240 RSD</span>
+                        </li>
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Bavaria / Heineken 0.33l</span>
+                                <p class="item-desc">Premium flaširana strana piva</p>
+                            </div>
+                            <span class="item-price">290 RSD</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Vina -->
+                <div class="menu-category">
+                    <div class="category-icon">🍷</div>
+                    <h3>Vina</h3>
+                    <ul class="menu-list">
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Kovačević Aurelius (Crveno)</span>
+                                <p class="item-desc">Premium domaće crveno vino, čaša 0.15l</p>
+                            </div>
+                            <span class="item-price">450 RSD</span>
+                        </li>
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Radovanović Chardonnay (Belo)</span>
+                                <p class="item-desc">Elegantno suvo belo vino, čaša 0.15l</p>
+                            </div>
+                            <span class="item-price">420 RSD</span>
+                        </li>
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Tikveš Alexandrija (Roze)</span>
+                                <p class="item-desc">Sveže i lagano roze vino, čaša 0.15l</p>
+                            </div>
+                            <span class="item-price">380 RSD</span>
+                        </li>
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">Domaća Sangrija</span>
+                                <p class="item-desc">Miks vina i svežeg sezonskog voća, karvin 0.5l</p>
+                            </div>
+                            <span class="item-price">600 RSD</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stranica 3: Rezervacije -->
+        <section id="rezervacije" class="page-section hidden-page reservation-section">
+            <div class="section-header">
+                <h2>Rezervišite Mesto</h2>
+                <p>Obezbedite savršen kutak za vas i vaše prijatelje na vreme</p>
+            </div>
+            <div class="res-card">
+                <form id="reservationForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="ime">Vaše Ime i Prezime</label>
+                            <input type="text" id="ime" placeholder="Npr. Marko Marković" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gosti">Broj Osoba</label>
+                            <input type="number" id="gosti" min="1" max="20" placeholder="0" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="datum">Datum i Vreme</label>
+                            <input type="datetime-local" id="datum" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-block">Potvrdi Rezervaciju</button>
+                </form>
+                <div id="formMessage" class="hidden"></div>
+            </div>
+        </section>
+
+        <!-- Stranica 4: Ocene -->
+        <section id="ocene" class="page-section hidden-page reviews-section">
+            <div class="section-header">
+                <h2>Utisci Gostiju</h2>
+                <p>Evo šta drugi kažu o našoj kuhinji i usluzi</p>
+            </div>
+            
+            <div class="reviews-container" id="reviewsContainer">
+                <div class="review-card">
+                    <div class="rev-header">
+                        <h4>Nikola Stanković</h4>
+                        <span class="rev-stars">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p>"Pohovana piletina je brutalna, porcija je ogromna! Enterijer je prelep, sve preporuke."</p>
+                </div>
+                <div class="review-card">
+                    <div class="rev-header">
+                        <h4>Milica Aleksić</h4>
+                        <span class="rev-stars">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p>"Najbolja domaća teletina pod sačem u gradu bez konkurencije. Ambijent je opuštajući i moderan."</p>
+                </div>
+            </div>
+
+            <div class="add-review-card">
+                <h3>Podelite Vaše Iskustvo</h3>
+                <form id="reviewForm">
+                    <div class="review-inputs">
+                        <input type="text" id="revName" placeholder="Vaše ime" required>
+                        <select id="revStars" required>
+                            <option value="5">⭐⭐⭐⭐⭐ (5/5)</option>
+                            <option value="4">⭐⭐⭐⭐ (4/5)</option>
+                            <option value="3">⭐⭐⭐ (3/5)</option>
+                            <option value="2">⭐⭐ (2/5)</option>
+                            <option value="1">⭐ (1/5)</option>
+                        </select>
+                    </div>
+                    <textarea id="revText" placeholder="Kakva vam se činila hrana i usluga?..." rows="4" required></textarea>
+                    <button type="submit" class="btn">Objavi Utisak</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- NOVI, LOKACIJSKI PRILAGOĐEN FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>📍 Lokacija</h3>
+                <p>Tornička 12, Zlatibor</p>
+            </div>
+            <div class="footer-info">
+                <h3>🕒 Radno Vreme</h3>
+                <p>Pon - Ned: 08:00 - 23:00h</p>
+            </div>
+            <div class="footer-info">
+                <h3>📧 Kontakt & Info</h3>
+                <p>info@kodmeda.rs</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Restoran "Kod Meda". Sva prava zadržana. Gurmanski raj na dohvat ruke.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
