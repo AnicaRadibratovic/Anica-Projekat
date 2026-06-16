@@ -13,7 +13,7 @@ Kako pokrenuti projekat na računaru
 
 3. **Pokretanje sajta:**
    Kada se baza uveze, u pretraživaču samo otvorite adresu foldera, na primer:
-   `http://localhost/restoran-medo/`
+   `http://localhost/kod-meda/`
    
 ## Podaci za konekciju (fajl `konekcija.php`)
 Konekcija je podešena na klasične parametre za localhost, tako da bi trebalo da proradi odmah:
