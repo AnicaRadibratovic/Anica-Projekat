@@ -9,10 +9,10 @@ Kako pokrenuti projekat na računaru
    * Upalite XAMPP (Apache i MySQL).
    * Idite na `http://localhost/phpmyadmin/`.
    * Napravite novu bazu i nazovite je tačno: **`restoran_medo`**.
-   * Kliknite na tu bazu, idite na opciju **Import** (Uvoz) i izaberite fajl **`restoran_medo.sql`** koji se nalazi u ovom mom folderu.
+   * Kliknite na tu bazu, idite na opciju **Import** (Uvoz) i izaberite fajl **`restoran_medo(2).sql`** koji se nalazi u ovom mom folderu.
 
 3. **Pokretanje sajta:**
-   Kada se baza uveze, u pretraživaču samo otvorite adresu foldera, na primer:
+   Kada se baza uveze, u pretraživaču samo otvorite adresu foldera:
    `http://localhost/kod-meda/`
    
 ## Podaci za konekciju (fajl `konekcija.php`)
